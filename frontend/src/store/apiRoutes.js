@@ -1,0 +1,24 @@
+// Arquivo: apiRoutes.js
+// Propósito: armazenar as rotas / endpoints usados pelo front-end.
+// Nota: originalmente isto era um `atom` do Jotai; foi substituído por
+// um objeto simples para evitar dependência de estado global apenas para rotas.
+// Se o backend evoluir para suporte a query params (busca/paginação), aqui
+// é um bom lugar para centralizar esses padrões.
+export const apiRoutes = {
+  // O Vite encaminha /api ao back-end local. Em hospedagens separadas, informe a URL pública da API.
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
+
+  // Endpoints de vagas no banco de dados
+  vagasList: '/vaga/',
+  vagaCreate: '/vaga/',
+
+  // Base para pegar uma vaga por id (usado como `${vagaByIdBase}/${id}`)
+  vagaByIdBase: '/vaga',
+
+  // Integrações com provedores externos
+  vagasJooble: '/vaga/jooble',
+  vagasAdzuna: '/vaga/adzuna',
+
+  // Endpoint do chatbot
+  chatConverse: '/chat/converse',
+}

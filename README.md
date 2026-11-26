@@ -1,6 +1,6 @@
 # PAQ Jobs
 
-Projeto de mentoria da ONG Prototipando A Quabrada (PAQ) para ajudar jovens a encontrar vagas de estágio e jovem aprendiz. A interface permite buscar vagas, abrir seus detalhes e conversar com um assistente de carreira. A API consulta as vagas no MongoDB e usa a Groq para gerar as respostas do chat.
+Projeto de mentoria da ONG Prototipando A Quebrada (PAQ) para ajudar jovens a encontrar vagas de estágio e jovem aprendiz. A interface permite buscar vagas, abrir seus detalhes e conversar com um assistente de carreira. A API consulta as vagas no MongoDB e usa a Groq para gerar as respostas do chat.
 
 O back-end usa Node.js, Express e Mongoose. O front-end usa React, Vite, React Router e Tailwind CSS.
 
